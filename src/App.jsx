@@ -2,9 +2,15 @@ import React from 'react';
 
 import './App.css';
 import Item from "./Item";
+import dogAudio from "./audio/dog.mp3"
 
 
 class App extends React.Component{
+
+	constructor(){
+		super();
+		this.dogAudioRef = React.createRef()
+	}
 
 	state = {
 		counter: 0,
@@ -23,6 +29,8 @@ class App extends React.Component{
 	};
 
 	incCounter = () => {
+		this.dogAudioRef.current.currentTime = 0;
+		this.dogAudioRef.current.play();
 		this.setState({
 			counter: this.state.counter + 1
 		})
@@ -34,6 +42,7 @@ class App extends React.Component{
 		<div className="App">
 			<header className="App-header">
 				<div className="wrapper">
+					<audio src={dogAudio} ref={this.dogAudioRef}></audio>
 					{this.state.items.map(i =>
 					<Item key={i}
 					index={i}
