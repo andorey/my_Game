@@ -2,8 +2,8 @@ import React from 'react';
 
 import './App.css';
 import Item from "./Item";
-import smileAudio from "./audio/laugh-6.wav";
-import congrAudio from "./audio/laugh_2.wav";
+import smileAudio from "./audio/laugh_2.wav";
+import congrAudio from "./audio/crowd-excited.mp3";
 
 
 class App extends React.Component{
@@ -11,7 +11,6 @@ class App extends React.Component{
 	constructor(){
 		super();
 		this.smileAudioRef = React.createRef();
-		this.congrAudioRef = React.createRef();
 	}
 
 	state = {
@@ -30,9 +29,10 @@ class App extends React.Component{
 		})
 	};
 
+
 	incCounter = () => {
-		this.congrAudioRef.current.currentTime = 0;
-		this.congrAudioRef.current.play();
+		this.smileAudioRef.current.currentTime = 0;
+		this.smileAudioRef.current.play();
 		this.setState({
 			counter: this.state.counter + 1
 		})
@@ -44,8 +44,8 @@ class App extends React.Component{
 		<div className="App">
 			<header className="App-header">
 				<div className="wrapper">
-					<audio src={congrAudio}
-						   ref={this.congrAudioRef}></audio>
+					<audio src={smileAudio}
+						   ref={this.smileAudioRef}></audio>
 					{this.state.items.map(i =>
 					<Item key={i}
 					index={i}

@@ -13,7 +13,7 @@ const Item = (props) => {
 			<img className={imgClass} src={smileImg} alt=""/>
 		</div>
 	);
-}
+};
 
 
 export default Item;
