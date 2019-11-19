@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-import dogImg from "./img/dog.jpg";
+import smileImg from "./img/smile.png";
 
 const Item = (props) => {
 	let imgClass = props.index === props.randomIndex ? 'photo show' : 'photo';
@@ -10,7 +10,7 @@ const Item = (props) => {
 
 	return (
 		<div className="item" onClick={onClickHandler}>
-			<img className={imgClass} src={dogImg} alt=""/>
+			<img className={imgClass} src={smileImg} alt=""/>
 		</div>
 	);
 }

@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfa5c54d-07fe-460f-a52a-92366c614279" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/audio/dog.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/material_for_dog_app/crowd-excited.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/material_for_dog_app/laugh-6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/material_for_dog_app/laugh_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/material_for_dog_app/smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/laugh-6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/laugh_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/smile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/dog.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/dog.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +26,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TqfAFXWTFTTNiuJpTQ1YLXYXO6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/audio" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -30,6 +44,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/audio" />
+      <recent name="$PROJECT_DIR$/src/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -54,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574192400263</updated>
-      <workItem from="1574192401893" duration="1589000" />
+      <workItem from="1574192401893" duration="3290000" />
     </task>
     <servers />
   </component>
@@ -71,5 +86,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
