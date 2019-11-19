@@ -31,8 +31,8 @@ class App extends React.Component{
 	};
 
 	incCounter = () => {
-		this.smileAudioRef.current.currentTime = 0;
-		this.smileAudioRef.current.play();
+		this.congrAudioRef.current.currentTime = 0;
+		this.congrAudioRef.current.play();
 		this.setState({
 			counter: this.state.counter + 1
 		})
@@ -44,8 +44,8 @@ class App extends React.Component{
 		<div className="App">
 			<header className="App-header">
 				<div className="wrapper">
-					<audio src={smileAudio}
-						   ref={this.smileAudioRef}></audio>
+					<audio src={congrAudio}
+						   ref={this.congrAudioRef}></audio>
 					{this.state.items.map(i =>
 					<Item key={i}
 					index={i}
