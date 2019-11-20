@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Item from "./Item";
 import smileAudio from "./audio/laugh_2.wav";
-import congrAudio from "./audio/crowd-excited.mp3";
+import congAudion from "./audio/crowd-excited.mp3";
 
 
 class App extends React.Component{
@@ -11,16 +11,18 @@ class App extends React.Component{
 	constructor(){
 		super();
 		this.smileAudioRef = React.createRef();
+		this.congAudioRef = React.createRef();
 	}
 
 	state = {
 		counter: 0,
 		randomIndex: 4,
+		maxValue: 5,
 		items: [0,1,2,3,4,5,6,7,8]
 	};
 
 	componentDidMount() {
-		setInterval(this.setRandomImageIndex, 1000)
+		setInterval(this.setRandomImageIndex, 900)
 	};
 
 	setRandomImageIndex = () => {
@@ -31,10 +33,16 @@ class App extends React.Component{
 
 
 	incCounter = () => {
-		this.smileAudioRef.current.currentTime = 0;
-		this.smileAudioRef.current.play();
 		this.setState({
 			counter: this.state.counter + 1
+		}, () => {
+			if (this.state.counter < this.state.maxValue) {
+				this.smileAudioRef.current.currentTime = 0;
+				this.smileAudioRef.current.play();
+			} else {
+				this.congAudioRef.current.currentTime = 0;
+				this.congAudioRef.current.play();
+			}
 		})
 	};
 
@@ -46,6 +54,8 @@ class App extends React.Component{
 				<div className="wrapper">
 					<audio src={smileAudio}
 						   ref={this.smileAudioRef}></audio>
+					<audio src={congAudion}
+						   ref={this.congAudioRef}></audio>
 					{this.state.items.map(i =>
 					<Item key={i}
 					index={i}
